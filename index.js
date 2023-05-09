@@ -27,15 +27,18 @@ console.log(totalPrice)
 // let "affogato, 'cuban espresso'" = (seasonal)
 
 
-// const inSeasonal = (item) =>  {
-//     return item.seasonal == true;
-// };
+const inSeasonal = (item) =>  {
+    return item.seasonal == true;
+};
+
+
+const seasonalDrink = coffeeMenu.filter(inSeasonal)
+console.log(seasonalDrink)
 
 
 
-// const seasonalDrink = coffeeMenu.filter(inSeasonal)
-
-// //Prints seasonal drinks with the phrase
-// const name = (seasonalDrink) => {
-// }
-// console.log(seasonalDrink.map(name))
+//Prints seasonal drinks with the phrase
+const name = (seasonalDrink) => {
+    return seasonalDrink.name+" with imported beans."
+}
+console.log(seasonalDrink.map(name))
